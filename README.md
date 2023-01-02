@@ -16,12 +16,14 @@ the image to the user's given email.
 
 ## how to run the program?
 1) clone the repository
-2) Please use a gmail account with the program if you use outlook or any other
-account the program will not be able to send an email to that account.
-3) when you run the program, you will see a prompt to enter 
+2) CREATE an 'images' folder without changing the name in the 
+ same directory as the object_detection.py file .You can copy and paste the name 'images'.
+3) Please use a gmail account with the program if you use outlook or any other
+account the program will not be able to send an email to  that account.
+4) when you run the program, you will see a prompt to enter 
 your email and another prompt where you have to enter 0
 to use the main (integrated) camera or 1 to use a secondary camera.
-4) when the program runs, please go out of your video frame
+5) when the program runs, please go out of your video frame
 otherwise the program will identify you as background and not work properly. After it starts 
 you can try coming in frame or to bring some object in the video frame.
-
+6) To quit the program press 'q'
