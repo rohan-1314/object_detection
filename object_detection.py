@@ -4,6 +4,7 @@ from send_email import send_email
 import glob
 import os
 from threading import Thread
+
 # take user input email and choice of camera
 user_email = input('enter your email: ')
 user_camera_input = int(input('please enter 0 to use main camera or 1 to use secondary camera: '))
@@ -13,6 +14,7 @@ time.sleep(1)
 first_frame = None
 status_list = []
 count = 1
+
 
 # create clean images folder function
 def clean_folder():
@@ -44,7 +46,7 @@ try:
         contours, check = cv2.findContours(dil_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         # create contour parameter
         for contour in contours:
-            if cv2.contourArea(contour) < 6000:
+            if cv2.contourArea(contour) < 5000:
                 continue
             # get x,y coordinates and width and height
             x, y, w, h = cv2.boundingRect(contour)
